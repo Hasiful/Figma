@@ -1,0 +1,101 @@
+@media(min-width: 768px) {
+    .box_section_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .landing_box_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .landing_section_top {
+        flex-direction: row;
+    }
+    .graphs_section_wrapper {
+        flex-direction: row;
+    }
+    .graphs_sectio_left {
+        width: 47%;
+    }
+    .graphs_section_content {
+        width: 44%;
+    }
+    .graphs_section_wrapper_2 {
+        flex-direction: row-reverse;
+    }
+    .review_section_wrapper {
+        flex-direction: row;
+    }
+    .review_section_thumbnil {
+        width: 40%;
+    }
+    .review_section_content {
+        width: 39%;
+    }
+    .blog_section_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .input_inner {
+        width: 50%;
+    }
+    .input_wrapper {
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 1024px) {
+    .banner_section_content {
+        width: 42%;
+    }
+    .banner_section_image {
+        width: 56%;
+        display: flex;
+    }
+    .banner_section_wrapper {
+        flex-direction: row;
+    }
+    .post_section_thumbnil {
+        width: 52%;
+    }
+    .post_section_thumbnil1 {
+        width: 50% !important;
+    }
+    .post_section_content {
+        width: calc(100% - 54%);
+    }
+    .post_section_content1 {
+        width: calc(100% - 56%) !important;
+    }
+    .post_section_wrapper {
+        flex-direction: row;
+        gap: 0px;
+    }
+    .post2_section_wrapper {
+        flex-direction: row-reverse;
+    }
+    .box_section_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .landing_box_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .blog_section_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer_wrapper {
+        flex-direction: row;
+        gap: 0px;
+    }
+    .footer_top_content {
+        width: 49%;
+    }
+    .footer_top_contact {
+        width: 47%;
+    }
+    .footer_menu {
+        display: flex;
+    }
+    .header_right {
+        display: flex;
+    }
+    .header_togller {
+        display: none;
+    }
+}
