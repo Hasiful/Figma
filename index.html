@@ -8,6 +8,10 @@
     <title>Parley</title>
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery link -->
+    <link rel="stylesheet" href="assets/css/jQuery-plugin-progressbar.css">
     <!-- main css -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- global css -->
@@ -28,9 +32,9 @@
                 <div class="header_wrapper">
                     <!-- header logo -->
                     <div class="header_logo">
-                        <div class="header_logo_image">
+                        <a href="file:///C:/Users/Akjm/Desktop/figma/index.html" class="header_logo_image">
                             <img src="assets/image/Group 20117.png" alt="">
-                        </div>
+                        </a>
                     </div>
 
                     <div class="header_right">
@@ -214,7 +218,12 @@
         <div class="container">
             <div class="post_section_wrapper post2_section_wrapper">
                 <div class="post_section_thumbnil">
-                    <img src="assets/image/Content 2.png" alt="">
+                    <img src="assets/image/Img.png" alt="">
+                    <div class="progress_dynamic">
+                        <div class="progress-bar" data-percent="60" data-duration="1000" data-color="#ccc,yellow"></div>
+                        <div class="progress-bar" data-percent="50" data-duration="1000" data-color="#ccc,yellow"></div>
+                        <div class="progress-bar" data-percent="30" data-duration="1000" data-color="#ccc,yellow"></div>
+                    </div>
                 </div>
                 <div class="post_section_content post">
                     <div class="post_content_title">Marketplace for data exchange.</div>
@@ -320,6 +329,15 @@
                         <div class="landing_section_dotted3">
                             <img src="assets/image/dooted 5.png" alt="">
                         </div>
+                        <div class="landing_box_item_ellips1">
+                            <img src="assets/image/Ellipse 20.png" alt="">
+                        </div>
+                        <div class="landing_box_item_ellips2">
+                            <img src="assets/image/Ellipse 21.png" alt="">
+                        </div>
+                        <div class="landing_box_item_ellips3">
+                            <img src="assets/image/Ellipse 21.png" alt="">
+                        </div>
                     </div>
                     <!-- item -->
                     <div class="landing_box_item">
@@ -352,6 +370,15 @@
                         <div class="landing_box_btn">
                             <a href=""> Get Started <span><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 1.5L14.5 7M14.5 7L9 12.5M14.5 7H0" stroke="white" stroke-width="2"></path></svg></span> </a>
+                        </div>
+                        <div class="landing_box_item_ellips1">
+                            <img src="assets/image/Ellipse 20.png" alt="">
+                        </div>
+                        <div class="landing_box_item_ellips2">
+                            <img src="assets/image/Ellipse 21.png" alt="">
+                        </div>
+                        <div class="landing_box_item_ellips3">
+                            <img src="assets/image/Ellipse 21.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -470,19 +497,26 @@
                 <div class="graphs_section_content">
                     <div class="graphs_content_title">A Single Source Of Truth For All</div>
                     <div class="graphs_content_tab">
-                        <ul>
-                            <li>
-                                <a href="">One Platform</a>
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-target="#tab-content1" data-bs-toggle="pill" href="">One Platform</a>
                             </li>
-                            <li>
-                                <a href="">Time Value</a>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-target="#tab-content2" data-bs-toggle="pill" href="">Time Value</a>
                             </li>
-                            <li>
-                                <a href="">Smart Work</a>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-target="#tab-content3" data-bs-toggle="pill" href="">Smart Work</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="graphs_content_bottom_title">Parlay is a data marketplace, where you can share your data, gain unparalleled access to data from SEA corporations from different industries, and imagine a myriad of possibilities in a way that was never this easy before</div>
+                    <div class="tab-content">
+                        <div class="graphs_content_bottom_title tab-pane active" id="tab-content1">Parlay is a data marketplace, where you can share your data, gain unparalleled access to data from SEA corporations from different industries, and imagine a myriad of possibilities in a way that was never this easy before Parlay
+                            is a data marketplace, where you can share your data, gain unparalleled access to data from SEA corporations from different industries, and imagine a myriad of possibilities in a way that was never this easy before
+                        </div>
+                        <div class="graphs_content_bottom_title tab-pane" id="tab-content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aspernatur, voluptate distinctio iusto earum est asperiores voluptatibus, dolore, quos sequi nulla dolorum? Distinctio, ut. Corporis eos ipsum soluta non laboriosam!</div>
+                        <div class="graphs_content_bottom_title tab-pane" id="tab-content3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, dolorum. Adipisci eveniet doloribus, eos inventore non blanditiis eaque laudantium! Fuga ad temporibus nobis laboriosam quae placeat molestias. Sapiente, fugit
+                            eaque! </div>
+                    </div>
 
 
                     <div class="post_section_button">
@@ -493,7 +527,6 @@
             </div>
         </div>
     </section>
-
     <!-- 
     ==========================================
             End graphs2 section
@@ -522,40 +555,73 @@
                     </div>
                 </div>
                 <div class="review_section_content">
-                    <div class="review_content_star">
-                        <ul>
-                            <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
-                                </svg></span>
-                            </li>
-                            <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
-                                </svg></span>
-                            </li>
-                            <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
-                                </svg></span>
-                            </li>
-                            <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
-                                </svg></span>
-                            </li>
-                            <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
-                                </svg></span>
-                            </li>
-                        </ul>
+                    <div class="carousel slide" id="carouselExampleControls">
+                        <div class="slider_item carousel-item active">
+                            <div class="review_content_star">
+                                <ul>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="review_content_text">“Scelerisque nulla netus lorem vitae egestas. Urna nibh velit orci viverra sit in cras ornare. Donec facilisis fermentum scelerisque et. Ut fermentum nec sed quis nulla dictum vel”</div>
+                            <div class="reveiw_content_name">Lindsey Ekstrom</div>
+                            <div class="reveiw_content_jobtitle">Digital Marketing</div>
+                        </div>
+                        <div class="slider_item carousel-item">
+                            <div class="review_content_star">
+                                <ul>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                    <li><span><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.10445 0.802446C7.47215 0.0623902 8.52785 0.0623889 8.89555 0.802445L10.4232 3.87709C10.5688 4.17015 10.8486 4.37343 11.1723 4.42135L14.5685 4.92411C15.386 5.04513 15.7122 6.04916 15.122 6.62755L12.6699 9.03055C12.4362 9.25959 12.3293 9.5885 12.3838 9.91118L12.9551 13.2966C13.0927 14.1114 12.2386 14.7319 11.5061 14.3493L8.46298 12.7598C8.17292 12.6083 7.82708 12.6083 7.53702 12.7598L4.4939 14.3493C3.76143 14.7319 2.90735 14.1114 3.04487 13.2966L3.6162 9.91118C3.67066 9.5885 3.56379 9.25959 3.33007 9.03055L0.877979 6.62755C0.287769 6.04916 0.613999 5.04513 1.43146 4.92411L4.82769 4.42135C5.1514 4.37343 5.43119 4.17015 5.5768 3.87709L7.10445 0.802446Z" fill="#FFB400"/>
+                                        </svg></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="review_content_text">“Scelerisque nulla netus lorem vitae egestas. Urna nibh velit orci viverra sit in cras ornare. Donec facilisis fermentum scelerisque et. Ut fermentum nec sed quis nulla dictum vel”</div>
+                            <div class="reveiw_content_name">Lindsey Ekstrom</div>
+                            <div class="reveiw_content_jobtitle">Digital Marketing</div>
+                        </div>
+                        <!-- item -->
                     </div>
-                    <div class="review_content_text">“Scelerisque nulla netus lorem vitae egestas. Urna nibh velit orci viverra sit in cras ornare. Donec facilisis fermentum scelerisque et. Ut fermentum nec sed quis nulla dictum vel”</div>
-                    <div class="reveiw_content_name">Lindsey Ekstrom</div>
-                    <div class="reveiw_content_jobtitle">Digital Marketing</div>
-
                     <div class="review_content_arrow_button">
-                        <div class="arrow_left_btn"><span><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="arrow_left_btn carousel-control-prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.37226 11.25C5.26021 11.2503 5.1495 11.2256 5.04827 11.1776C4.94703 11.1296 4.85785 11.0595 4.78726 10.9725L1.16476 6.47246C1.05445 6.33826 0.994141 6.16993 0.994141 5.99621C0.994141 5.82249 1.05445 5.65416 1.16476 5.51996L4.91476 1.01996C5.04206 0.8668 5.22499 0.770482 5.42331 0.752197C5.62163 0.733912 5.81909 0.795159 5.97226 0.922463C6.12542 1.04977 6.22174 1.2327 6.24002 1.43102C6.25831 1.62934 6.19706 1.8268 6.06976 1.97996L2.71726 5.99996L5.95726 10.02C6.04897 10.1301 6.10723 10.2641 6.12514 10.4063C6.14305 10.5484 6.11986 10.6927 6.05832 10.8221C5.99677 10.9515 5.89945 11.0606 5.77787 11.1364C5.65629 11.2122 5.51553 11.2516 5.37226 11.25Z" fill="#747474"/>
                             </svg>
                             </span></div>
-                        <div class="arrow_right_btn"><span><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="arrow_right_btn carousel-control-next" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.62774 0.750037C1.73979 0.749657 1.8505 0.774385 1.95173 0.822407C2.05297 0.870428 2.14215 0.940522 2.21274 1.02754L5.83524 5.52754C5.94555 5.66174 6.00586 5.83007 6.00586 6.00379C6.00586 6.17751 5.94555 6.34584 5.83524 6.48004L2.08524 10.98C1.95794 11.1332 1.77501 11.2295 1.57669 11.2478C1.37837 11.2661 1.18091 11.2048 1.02774 11.0775C0.874581 10.9502 0.778264 10.7673 0.759979 10.569C0.741694 10.3707 0.80294 10.1732 0.930244 10.02L4.28274 6.00004L1.04274 1.98004C0.951032 1.86995 0.892774 1.73589 0.874865 1.59373C0.856955 1.45157 0.880142 1.30725 0.941684 1.17786C1.00323 1.04846 1.10055 0.939402 1.22213 0.863585C1.34371 0.787766 1.48447 0.748363 1.62774 0.750037Z" fill="white"/>
                             </svg>
                             </span></div>
@@ -738,7 +804,14 @@
     -->
 
 
+    <!-- java script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jQuery-plugin-progressbar.js"></script>
+    <script>
+        $(".progress-bar").loading();
+    </script>
 </body>
 
 </html>

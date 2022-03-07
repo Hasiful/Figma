@@ -3,8 +3,18 @@
     padding: 0px;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -12,14 +22,14 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1280px !important;
     width: 100%;
-    margin: 0px auto;
+    margin: 0px auto !important;
     padding: 0px 25px;
 }
 
 :root {
-    --primaryColor: #183B56;
+    --primaryColor: #183B56 !important;
     --mainColor: #F41729;
     --textColor: #5A7184;
 }
@@ -56,4 +66,72 @@ body {
     height: 2px;
     background-color: #FFFFFF;
     width: 30px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+.progress-bar div {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.progress-bar .background {
+    background-color: #b3cef6;
+}
+
+.progress-bar .rotate {
+    clip: rect(0 50px 100px 0);
+    background-color: #4b86db;
+}
+
+.progress-bar .left {
+    clip: rect(0 50px 100px 0);
+    opacity: 1;
+    background-color: #b3cef6;
+}
+
+.progress-bar .right {
+    clip: rect(0 50px 100px 0);
+    transform: rotate(180deg);
+    opacity: 0;
+    background-color: #4b86db;
+}
+
+@keyframes toggle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress_dynamic {
+    max-width: 328px;
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 172px;
+    display: flex;
+    align-items: center;
+    border-radius: 21px;
+    justify-content: space-around;
+    position: absolute;
+    top: 100px;
+    right: 7px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: unset !important;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden !important;
 }
